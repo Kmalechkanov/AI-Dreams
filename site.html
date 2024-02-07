@@ -24,18 +24,13 @@
 	</style>
 </head>
 <body onclick="playVideo()">
-	<video id="myVideo" autoplay loop>
+	<video id="myVideo" autoplay loop muted>
         <source src="video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-	<script>
-		function playVideo() {
-			var video = document.getElementById("myVideo");
-
-			if (video.paused) {
-				video.play();
-			}
-		}
-	</script>
+	<audio autoplay>
+		<source src="video.mp4" type="video/mp4">
+		Your browser does not support the audio tag.
+	  </audio>
 </body>
 </html>
